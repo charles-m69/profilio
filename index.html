@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Charles M. - Personal Website</title>
+
+    <!--Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+    crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-id" data-bs-target=".floating-menu" data-bs-target="btn-back-to-top" data-bs-target=".useful-links" data-bs-target="#cartogrid">
+    <!--Navbar-->
+    <div class="container-lg p-1 top-0">
+        <nav class="navbar navbar-expand-md" id="navbar-id">
+            <a href="#" class="navbar-brand ms-2" data-aos="zoom-in" 
+            data-aos-easing="ease-out-sine" data-aos-duration="1000">Charles M.</a>
+
+            <!--Hamburger Menu Icon / For Mobile View-->
+            <button class="navbar-toggler collapsed ms-auto me-2" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="toggleNavigation" data-aos="zoom-in" 
+            data-aos-easing="ease-out-sine" data-aos-duration="1000">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <!--Hamburger Menu Icon / For Mobile View-->
+
+            <!--Nav Links-->
+            <div class="collapse navbar-collapse my-2" id="toggleMobileMenu" data-aos="zoom-in" 
+            data-aos-easing="ease-out-sine" data-aos-duration="1000">
+                <ul class="navbar-nav text-center ms-auto">
+                    <li>
+                        <a href="#navbar-id" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#specialty" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#blogs" class="nav-link">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="#contacts" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Nav Links-->
+
+            <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"></div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"></div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"></div>
+            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0"></div>
+            </div>
+        </nav>
+    </div>
+    <!--Navbar-->
+    
+    <!--Floating Menu-->
+    <!--Button to open floating menu-->
+    <div class="offcanvas-start" tabindex="-1" id="float-toggle" aria-labelledby="offcanvas1Label">
+        <button class="btn" type="button" id="menu-float-toggler" data-bs-toggle="offcanvas" data-bs-target="#floating-menu" aria-controls="floating-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </button>
+    </div>
+    <!--Button to open floating menu-->
+
+    <!--Actual Floating Menu-->
+    <div class="offcanvas" id="floating-menu" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" aria-labelledby="offcanvas2Label">
+        <nav class="floating-menu">
+            <ul class="main-menu">
+                <!--to Home-->
+                <li>
+                    <a href="#navbar-id" class="ripple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+                        </svg>
+                    </a>
+                </li>
+
+                <!--to About Section-->
+                <li>
+                    <a href="#specialty" class="ripple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                        </svg>
+                    </a>
+                </li>
+
+                <!--to Resume-->
+                <li>
+                    <a href="#resume" class="ripple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-vcard-fill" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
+                        </svg>
+                    </a>
+                </li>
+
+                <!--to Portfolio-->
+                <li>
+                    <a href="#portfolio" class="ripple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder2-open" viewBox="0 0 16 16">
+                            <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v.64c.57.265.94.876.856 1.546l-.64 5.124A2.5 2.5 0 0 1 12.733 15H3.266a2.5 2.5 0 0 1-2.481-2.19l-.64-5.124A1.5 1.5 0 0 1 1 6.14zM2 6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5a.5.5 0 0 0-.5.5zm-.367 1a.5.5 0 0 0-.496.562l.64 5.124A1.5 1.5 0 0 0 3.266 14h9.468a1.5 1.5 0 0 0 1.489-1.314l.64-5.124A.5.5 0 0 0 14.367 7z"/>
+                        </svg>
+                    </a>
+                </li>
+
+                <!--to Blogs-->
+                <li>
+                    <a href="#blogs" class="ripple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-richtext" viewBox="0 0 16 16">
+                            <path d="M7.5 3.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0m-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208M5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                            <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+                            <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+                        </svg>
+                    </a>
+                </li>
+
+                <!--to Contact-->
+                <li>
+                    <a href="#contacts" class="ripple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-paper-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M6.5 9.5 3 7.5v-6A1.5 1.5 0 0 1 4.5 0h7A1.5 1.5 0 0 1 13 1.5v6l-3.5 2L8 8.75zM1.059 3.635 2 3.133v3.753L0 5.713V5.4a2 2 0 0 1 1.059-1.765M16 5.713l-2 1.173V3.133l.941.502A2 2 0 0 1 16 5.4zm0 1.16-5.693 3.337L16 13.372v-6.5Zm-8 3.199 7.941 4.412A2 2 0 0 1 14 16H2a2 2 0 0 1-1.941-1.516zm-8 3.3 5.693-3.162L0 6.873v6.5Z"/>
+                        </svg>
+                    </a>
+                </li>
+
+                <!--Close floating menu and reappear the toggle button-->
+                <li>
+                    <a href="#" class="ripple" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <div class="menu-bg"></div>
+        </nav>
+    </div>
+    <!--Actual Floating Menu-->
+    <!--Floating Menu-->
+    
+
+    <br>
+
+    <!--Hero-->
+    <div class="container">
+        <div class="row">
+            <!--Left-->
+            <!--Profile Picture-->
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div id="circle-container" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-back">
+                    <div class="circle-border"></div>
+                    <div class="elementor-widget-container">
+                        <div class="elementor-image">
+                            <img src="images/hero-pfp.jpg" alt="Hero" class="img-fluid rounded-circle mb-3" id="heropfp">
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <!--Profile Picture-->     
+            <!--Left-->   
+
+            <!--Right-->
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="hero-content" style="overflow-x: hidden;">
+                    <!--Intro header-->
+                    <h6 id="hero-text" data-aos="flip-down" data-aos-duration="1500" data-aos-easing="ease-in-out-back" data-aos-delay="1000">Hello, I am</h6>
+                    <hr style="width: 40px;" id="hello-line" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+
+                    <h1 class="display-1 fw-bold" id="hero-text" data-aos="flip-up" data-aos-duration="1500" data-aos-easing="ease-in-out-back" data-aos-delay="1500">Charles M.</h1>
+                    <!--Intro header-->
+
+                    <!--Auto-typing Text-->
+                    <div class="container-type" data-aos="flip-down" data-aos-duration="1500" data-aos-easing="ease-in-out-back" data-aos-delay="1500">
+                        <h3 class="lead fw-medium fs-3">
+                            <span class="auto-type"></span>
+                        </h3>
+                    </div>
+
+                    <!--Imported JavaScript typing animation-->
+                    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                    <!--Imported JavaScript typing animation-->
+                    <!--Auto-typing Text-->
+                    
+                    <!--Summary bio-->
+                    <p class="lead" id="hero-bio" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-out" data-aos-delay="2500">
+                        I do various kinds of work under the field of multimedia arts. A digital trackmaker and a content creator based on Philippines. I started it all as a hobby, now it looks like a profession. Have fun scrolling through!
+                    </p>
+                    <!--Summary bio-->
+
+                    <!--Skills Summary-->
+                    <div class="container" id="skillset-head" data-aos="flip-down" data-aos-duration="800" data-aos-easing="ease-out" data-aos-delay="2800">
+                        <div class="container">
+                            <h6 class="display-6 text-center fs-5 text-center">What I do</h6>
+                            <hr class="m-auto" style="width: 100px;" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="3000">
+                        </div>
+
+                        <div class="container text-center">
+                            <div class="row align-items-start d-block d-sm-inline-flex" id="skills" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="2800">
+                                <div class="col">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones text-info-emphasis" viewBox="0 0 16 16">
+                                            <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5"/>
+                                        </svg>
+                                    </span>
+                                    <h4 class="lead fs-5 fw-semibold mb-2 w-100 text-info-emphasis">Music Production</h4>
+                                    <p class="lead fs-6 text-wrap" id="skill-desc">
+                                        I mainly produce EDM and other specific genres. I can mix and master, and hold a masterclass.
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-palette text-info-emphasis" viewBox="0 0 16 16">
+                                            <path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                            <path d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8m-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7"/>
+                                        </svg>
+                                    </span> 
+                                    <h4 class="lead fs-5 fw-semibold text-info-emphasis">Digital Arts</h4>
+                                    <p class="lead fs-6 text-wrap" id="skill-desc">
+                                        I use this skill in making my album covers. My approach are minimal and simple art styles.
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image text-info-emphasis" viewBox="0 0 16 16">
+                                            <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                                            <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1z"/>
+                                        </svg>
+                                    </span>
+                                    <h4 class="lead fs-5 fw-semibold text-info-emphasis">Photo/Video Editing</h4>
+                                    <p class="lead fs-6 text-wrap" id="skill-desc">
+                                        Can do image manipulation, designing and motion graphics.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Skills Summary-->
+
+                    <hr data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+                    
+                    <!--SocMed Icons-->                   
+                    <div class="row align-items-center" id="socmed-hero">
+                        <!--Facebook-->
+                        <div class="col-6 col-sm-3 col-md-3 text-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="2000">
+                            <a type="button" class="btn rounded-4" id="icon1" href="https://www.facebook.com/bp.charlesjk" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <!--Facebook-->
+                        
+
+                        <!--YouTube-->
+                        <div class="col-6 col-sm-3 col-md-3 text-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="2000">
+                            <a type="button" class="btn rounded-4" id="icon2" href="https://www.youtube.com/c/SWANNAH69" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <!--YouTube-->
+
+                        <!--Instagram-->
+                        <div class="col-6 col-sm-3 col-md-3 text-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="2000">                           
+                            <a type="button" class="btn rounded-4" id="icon3" href="https://www.instagram.com/wanasan16/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                </svg>
+                            </a>                           
+                        </div>
+                        <!--Instagram-->
+
+                        <!--Spotify-->
+                        <div class="col-6 col-sm-3 col-md-3 text-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="2000">                           
+                            <a type="button" class="btn rounded-4" id="icon4" href="https://open.spotify.com/artist/47SYCgJrnsGnlDNcUpfqy1?si=AtB1aNCySh6cd99UNLAS3A" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
+                                </svg>
+                            </a>                           
+                        </div>
+                        <!--Spotify-->
+                    </div>
+                    <!--SocMed Icons--> 
+
+                </div>
+                
+            </div>
+            <!--Right-->
+        </div>
+        
+    </div>
+    <!--Hero-->
+
+    <br>
+    <br>
+    <br>
+
+    <!--Parallax Image-->
+    <div class="parallax">
+        <div class="parallax-text" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800">
+            <h1 class="display-5 fw-semibold">"If you want to look thin, hang out with fat people."</h1>
+            <p class="lead">— Rodney Dangerfield</p>
+        </div>
+    </div>
+    <!--Parallax Image-->
+
+    <br>
+    <br>
+    <br>
+
+    <!--More Info About Me-->
+    <div class="container">
+        <div class="row" id="specialty">
+            <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-out">
+                <p class="lead" id="about-text">
+                    Started as a gaming channel to a music artist channel. I have been producing music for nearly 6 years, I have been gaining more knowledge on music theory along the way. Over these years, I have worked and collaborated with several artists (fellow DTMers, Digital Artists, Motion Graphic Artists and MV Artists, Vocalists/Singers) releasing different levels of projects throughout my discography. My music have been featured in several content, especially in rhythm games. I used this skill for freelancing in an active community full of content creators. I've released my music on different record labels and platforms, leading me to growth and gaining thousands of listeners.
+                    <br>
+                    <br>
+                    I find that drumming alone is hard to pursue as a career when you do not have a band to play with. So I had to get inspired by a different kind of music, exploring different genres opens so much opportunity and it expands creativity.
+                    <br>
+                    <br>
+                    The rest of the skills I obtained from making gaming content are factors that helped give visuals to my music.
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 text-lg-end text-sm-center align-content-center" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-out">
+                <h1 class="display-1 fw-semibold text-info-emphasis" id="specialty-title">
+                    My Specialty
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!--More Info About Me-->
+
+    <br>
+    <br>
+    <br>
+    <hr class="mx-3">
+
+    <!--Resume-->
+    <section id="resume">
+        <div class="container" id="resume" data-aos="zoom-in" data-aos-easing="ease-out" data-aos-duration="800">
+            <h1 class="display-4 fw-semibold text-info-emphasis">Background and Resume</h1>
+        </div>
+    
+        <!--Education / Experiences / Skills tab-->
+        <div class="container">
+            <div class="row">
+                <!--Left-->
+                <div class="col-lg-6 col-md-12 col-sm-12" data-aos="zoom-in" data-aos-easing="ease-out" data-aos-duration="800" data-aos-delay="100">
+                    <!--Education Timeline-->
+                    <section class="py-3">
+                        <h1 class="lead fw-medium fs-1 mb-2">Education</h1>
+                        <ul class="timeline-with-icons mx-3" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800" data-aos-delay="150">
+                            <!--Timeline 1: Elementary School-->
+                            <li class="timeline-item mb-5" >
+                                <span class="timeline-icon" data-aos="zoom-in" data-aos-easing="ease-in-out-back" data-aos-duration="800" data-aos-delay="250">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backpack-fill" viewBox="0 0 16 16">
+                                        <path d="M5 13v-3h4v.5a.5.5 0 0 0 1 0V10h1v3z"/>
+                                        <path d="M6 2v.341C3.67 3.165 2 5.388 2 8v5.5A2.5 2.5 0 0 0 4.5 16h7a2.5 2.5 0 0 0 2.5-2.5V8a6 6 0 0 0-4-5.659V2a2 2 0 1 0-4 0m2-1a1 1 0 0 1 1 1v.083a6 6 0 0 0-2 0V2a1 1 0 0 1 1-1m0 3a4 4 0 0 1 3.96 3.43.5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14A4 4 0 0 1 8 4M4.5 9h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5"/>
+                                    </svg>
+                                </span>
+                        
+                                <h5 class="fw-bold">Primary Education</h5>
+                                <p class="text-muted mb-2 fw-bold"><i class="far fa-clock" aria-hidden="true"></i> Rancho Imperial Day Care Center (S.Y. 2008-2010)</p>
+                                <p class="text-muted mb-2 fw-bold"><i class="far fa-clock" aria-hidden="true"></i> Blessed Margaret De Castello School (S.Y. 2010-2013)</p>
+                                <p class="text-muted mb-2 fw-bold"><i class="far fa-clock" aria-hidden="true"></i> IC Learning Center (S.Y. 2013-2014)</p>
+                                <p class="text-muted mb-2 fw-bold"><i class="far fa-clock" aria-hidden="true"></i> Lumil Elementary School (S.Y. 2014-2016)</p>
+                                <ul>
+                                    <li class="text-muted">
+                                        Six-time student with honors (First 2 years of Kindergarten and First 4 years in Elementary)
+                                    </li>
+                                    <li class="text-muted">
+                                        Uncredited winner of IC art contest
+                                    </li>
+                                    <li class="text-muted">
+                                        3rd Placer in Mr. & Ms. Pageant at RIDCC
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--Timeline 1: Elementary School-->
+                        
+                            <!--Timeline 2: High School-->
+                            <li class="timeline-item mb-5">
+                                <span class="timeline-icon" data-aos="zoom-in" data-aos-easing="ease-in-out-back" data-aos-duration="800" data-aos-delay="400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+                                        <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                                    </svg>
+                                </span>
+                                <h5 class="fw-bold">Secondary Education</h5>
+                                <p class="text-muted mb-2 fw-bold"><i class="far fa-clock" aria-hidden="true"></i> Lumil Integrated National High School (S.Y. 2016-2022)</p>
+                                <p class="text-muted">
+                                No notable achievements
+                                </p>
+                            </li>
+                            <!--Timeline 2: High School-->
+                        
+                            <!--Timeline 3: College-->
+                            <li class="timeline-item mb-5">
+                                <span class="timeline-icon" data-aos="zoom-in" data-aos-easing="ease-in-out-back" data-aos-duration="800" data-aos-delay="500">
+                                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M5 3a2 2 0 0 0-2 2v5h18V5a2 2 0 0 0-2-2H5ZM3 14v-2h18v2a2 2 0 0 1-2 2h-6v3h2a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2h2v-3H5a2 2 0 0 1-2-2Z" clip-rule="evenodd"/>
+                                    </svg>                        
+                                </span>
+                                <div class="timeline-2 left-2">
+                                    <div class="card" data-aos="zoom-in-up" data-aos-easing="ease-in-out-back" data-aos-duration="1500" data-aos-delay="200">
+                                        <img src="https://i.vimeocdn.com/video/1082373481-9c1b08f8b41b70c0943402cf81ca585c0487aa20038ea4c4c7877d7c17aadfa6-d?f=webp" class="card-img-top"
+                                        alt="Responsive image">
+                                        <div class="card-body p-4">
+                                            <h4 class="fw-bold mb-2">Tertiary Education</h4>
+                                            <p class="text-muted mb-4 fw-bold"><i class="far fa-clock" aria-hidden="true"></i> Olivarez College Tagaytay (S.Y. 2022-present)</p>
+                                            <ul>
+                                                <li class="text-muted">
+                                                    Academic Merit of 2nd Semester S.Y. 2023-2024
+                                                </li>
+                                                <li class="text-muted mb-3">
+                                                    Rejected prototype
+                                                </li>
+                                            </ul>
+                                            <a href="https://olivarezcollegetagaytay.edu.ph/home/" target="_blank" class="btn btn-outline-success oct-visit">Visit official website</a>
+                                      </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--Timeline 3: College-->
+                        </ul>
+                    </section>
+                    <!--Education Timeline-->
+                </div>
+                <!--Left-->
+    
+                <!--Right-->
+                <div class="col-lg-6 col-md-12 col-sm-12" data-aos="zoom-in" data-aos-easing="ease-out" data-aos-duration="800" data-aos-delay="150">
+    
+                    <!--Experience Timeline-->
+                    <section>
+                        <h1 class="lead fw-medium fs-1 mb-2">Experiences</h1>
+                        <ul class="timeline-with-icons mx-3" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800" data-aos-delay="300">
+                            <!--Timeline 1: Music Producer-->
+                            <li class="timeline-item mb-5">
+                                <span class="timeline-icon" data-aos="zoom-in" data-aos-easing="ease-in-out-back" data-aos-duration="800" data-aos-delay="600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+                                        <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5"/>
+                                    </svg>
+                                </span>
+                        
+                                <h5 class="fw-bold">Digital Trackmaker</h5>
+                                <p class="text-muted mb-2 fw-bold"><i class="far fa-clock" aria-hidden="true"></i> Late 2017-present</p>
+                                <ul>
+                                    <li class="text-muted">More than 5.7K all-time Spotify streams</li>
+                                    <li class="text-muted">Reached 37,522 all-time plays on SoundCloud</li>
+                                    <li class="text-muted">64,427 YouTube total views</li>
+                                    <li class="text-muted">Mentored aspiring artists through masterclass</li>
+                                    <li class="text-muted">Made 4 record deals and 5 promotion deals</li>
+                                    <li class="text-muted">Successful collaborations with 5 different artists</li>
+                                    <li class="text-muted">Produced BGMs for VTubers</li>
+                                    <li class="text-muted">Featured music in rhythm games (e.g. Geometry Dash)</li>
+                                </ul>
+                            </li>
+                            <!--Timeline 1: Music Producer-->
+                        
+                            <!--Timeline 2: Digital and Image Artist-->
+                            <li class="timeline-item mb-5">
+                                <span class="timeline-icon" data-aos="zoom-in" data-aos-easing="ease-in-out-back" data-aos-duration="800" data-aos-delay="700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image-fill" viewBox="0 0 16 16">
+                                        <path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+                                    </svg>
+                                </span>
+                                <h5 class="fw-bold">Digital Artist and Photo Editor</h5>
+                                <p class="text-muted mb-2 fw-bold"><i class="far fa-clock" aria-hidden="true"></i> 2016</p>
+                                <ul>
+                                    <li class="text-muted">Designed album covers for different musical artists thru drawing, image manipulation, and graphic design</li>
+                                </ul>
+                            </li>
+                            <!--Timeline 2: Digital and Image Artist-->
+    
+                            <!--Timeline 3: Content Creator-->
+                            <li class="timeline-item mb-5">
+                                <span class="timeline-icon" data-aos="zoom-in" data-aos-easing="ease-in-out-back" data-aos-duration="800" data-aos-delay="800">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn" viewBox="0 0 16 16">
+                                        <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                                    </svg>
+                                </span>
+                                <h5 class="fw-bold">Video Content Creator and Editor</h5>
+                                <p class="text-muted mb-2 fw-bold"><i class="far fa-clock" aria-hidden="true"></i> 2016</p>
+                                <ul>
+                                    <li class="text-muted">Edits gaming videos and various type of YouTube content</li>
+                                    <li class="text-muted">Does a portion of motion graphics in music videos</li>
+                                    <li class="text-muted">Edited numerous short films, promotional videos, and vlogs for schools</li>
+                                </ul>
+                            </li>
+                            <!--Timeline 3: Content Creator-->
+                        </ul>
+                    </section>
+                    <!--Experience Timeline-->
+    
+                    <!--Skillset / Software Usage Capabilities-->
+                    <section>
+                        <div class="container" id="skillset-new" data-aos="zoom-in-up" data-aos-easing="ease-in-out-back" data-aos-duration="1500" data-aos-delay="200">
+                            <h1 class="lead fw-medium fs-1 mb-2">Skills</h1>
+    
+                            <!--Skill 1-->                        
+                            <div class="skill">
+                                <p class="lead fs-5 my-0" data-aos="zoom-in" data-aos-delay="800" 
+                                data-aos-easing="ease-out-sine" data-aos-duration="1000">FL Studio</p>
+                                <div class="progress mb-3" role="progressbar" aria-label="Animated striped example" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" data-aos="zoom-in" data-aos-delay="1000" data-aos-easing="ease-out"
+                                data-aos-duration="800">
+                                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated fw-bold" style="width: 99%" data-aos="slide-right" data-aos-delay="1500" 
+                                    data-aos-easing="ease-out-sine" data-aos-duration="1000">99%</div>
+                                </div>
+                            </div>
+                            <!--Skill 1-->  
+    
+                            <!--Skill 2-->
+                            <div class="skill">
+                                <p class="lead fs-5 my-0" data-aos="zoom-in" data-aos-delay="800" 
+                                data-aos-easing="ease-out-sine" data-aos-duration="1000">Adobe Premiere Pro</p>
+                                <div class="progress mb-3" role="progressbar" aria-label="Animated striped example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" data-aos="zoom-in" data-aos-delay="1000" data-aos-easing="ease-out"
+                                data-aos-duration="800">
+                                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated fw-bold" style="width: 85%" data-aos="slide-right" data-aos-delay="1500" 
+                                    data-aos-easing="ease-out-sine" data-aos-duration="1000">85%</div>
+                                </div>
+                            </div>
+                            <!--Skill 2-->
+    
+                            <!--Skill 3-->
+                            <div class="skill">
+                                <p class="lead fs-5 my-0" data-aos="zoom-in" data-aos-delay="800" 
+                                data-aos-easing="ease-out-sine" data-aos-duration="1000">Adobe Photoshop</p>
+                                <div class="progress mb-3" role="progressbar" aria-label="Animated striped example" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100" data-aos="zoom-in" data-aos-delay="800" 
+                                data-aos-easing="ease-out-sine" data-aos-duration="1000">
+                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated fw-bold text-dark" style="width: 73%" data-aos="slide-right" data-aos-delay="1500" 
+                                    data-aos-easing="ease-out-sine" data-aos-duration="1000">73%</div>
+                                </div>
+                            </div>
+                            <!--Skill 3-->
+    
+                            <!--Skill 4-->
+                            <div class="skill">
+                                <p class="lead fs-5 my-0" data-aos="zoom-in" data-aos-delay="800" 
+                                data-aos-easing="ease-out-sine" data-aos-duration="1000">Pirating Content</p>
+                                <div class="progress mb-3" role="progressbar" aria-label="Animated striped example" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" data-aos="zoom-in" data-aos-delay="1000" data-aos-easing="ease-out"
+                                data-aos-duration="800">
+                                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated fw-bold" style="width: 98%" data-aos="slide-right" data-aos-delay="1500" 
+                                    data-aos-easing="ease-out-sine" data-aos-duration="1000">98%</div>
+                                </div>
+                            </div>
+                            <!--Skill 4-->
+    
+                            <!--Skill 5-->
+                            <div class="skill">
+                                <p class="lead fs-5 my-0" data-aos="zoom-in" data-aos-delay="800" 
+                                data-aos-easing="ease-out-sine" data-aos-duration="1000">Programming</p>
+                                <div class="progress mb-3" role="progressbar" aria-label="Animated striped example" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" data-aos="zoom-in" data-aos-delay="1000" data-aos-easing="ease-out"
+                                data-aos-duration="800">
+                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated fw-bold" style="width: 3%" data-aos="slide-right" data-aos-delay="1500" 
+                                    data-aos-easing="ease-out-sine" data-aos-duration="1000">3%</div>
+                                </div>
+                            </div>
+                            <!--Skill 5-->
+                        </div>
+                    </section>
+                    <!--Skillset / Software Usage Capabilities-->
+                </div>
+                <!--Right-->
+            </div>
+        </div>
+        <!--Education / Experiences / Skills tab-->
+    </section>
+    
+    <!--Resume-->
+
+    <br>
+    <br>
+    <hr class="mx-3">
+
+    <!--Portfolio-->
+    <section id="portfolio">
+        <div class="container" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-out">
+            <h1 class="display-4 fw-semibold text-info-emphasis mb-3">Portfolio</h1>
+        </div>
+
+        <h5 class="mt-2 fw-light text-center">highlights of my best works</h5>              
+        
+        <!--Works through Carousel Cards-->
+        <div class="container text-center my-3" data-aos="fade-up" data-aos-easing="ease-out" data-aos-delay="150" data-aos-duration="300">
+
+            <div class="row mx-auto my-auto justify-content-center">
+                <div id="recipeCarousel" class="carousel slide" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-out" data-aos-delay="250" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <!--Carousel Item 1 | RAINBOW RACE-->
+                        <div class="carousel-item active">
+                            <div class="col-md-3 align-items-stretch">
+                                <div class="card h-100">
+                                    <img src="images/item1.png" class="card-img-top">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Rainbow Race</h5>
+                                        <p class="card-text mb-4">Digital Art | Music Production
+                                        </p>
+                                        
+                                        <!--Modal Button-->
+                                        <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal1" data-bs-toggle="modal">View work</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <!--Carousel Item 2 | daydream-->
+                        <div class="carousel-item">
+                            <div class="col-md-3 align-items-stretch">
+                                <div class="card h-100">
+                                    <img src="images/item2.jpg" class="card-img-top">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">daydream</h5>
+                                        <p class="card-text mb-4">Image Manipulation</p>
+                                      
+                                        <!--Modal Button-->
+                                        <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal2" data-bs-toggle="modal">View work</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <!--Carousel Item 3 | Friends-->
+                        <div class="carousel-item">
+                            <div class="col-md-3 align-items-stretch">
+                                <div class="card h-100">
+                                    <img src="images/item3.jpg" class="card-img-top">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Friends</h5>
+                                        <p class="card-text mb-4">Digital Art | Music Production</p>
+                                      
+                                        <!--Modal Button-->
+                                        <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal3" data-bs-toggle="modal">View work</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <!--Carousel Item 4 | wakeywakey-->
+                        <div class="carousel-item">
+                            <div class="col-md-3 align-items-stretch">
+                                <div class="card h-100">
+                                    <img src="images/item4.png" class="card-img-top">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">wakeywakey</h5>
+                                        <p class="card-text mb-4">Digital Art | Music Production</p>
+                                      
+                                        <!--Modal Button-->
+                                        <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal4" data-bs-toggle="modal">View work</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <!--Carousel Item 5 | BINI-->
+                        <div class="carousel-item">
+                            <div class="col-md-3 align-items-stretch">
+                                <div class="card h-100">
+                                    <img src="images/item5.png" class="card-img-top">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Cherry on Top (Remix)</h5>
+                                        <p class="card-text mb-4">Music Production</p>
+                                      
+                                        <!--Modal Button-->
+                                        <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal5" data-bs-toggle="modal">View work</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!--Carousel Item 6 | hunny-->
+                        <div class="carousel-item">
+                            <div class="col-md-3 align-items-stretch">
+                                <div class="card h-100">
+                                    <img src="images/item6.png" class="card-img-top">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">hunny</h5>
+                                        <p class="card-text mb-4">Music Production | Beatmaking</p>
+                                      
+                                        <!--Modal Button-->
+                                        <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal6" data-bs-toggle="modal">View work</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!--Carousel Item 7 | by my side-->
+                        <div class="carousel-item">
+                            <div class="col-md-3 align-items-stretch">
+                                <div class="card h-100">
+                                    <img src="images/item7.png" class="card-img-top">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">by my side</h5>
+                                        <p class="card-text mb-4">Digital Art | Music Production</p>
+                                      
+                                        <!--Modal Button-->
+                                        <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal7" data-bs-toggle="modal">View work</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!--Carousel Item 8 | Ascend-->
+                        <div class="carousel-item">
+                            <div class="col-md-3 align-items-stretch">
+                                <div class="card h-100">
+                                    <img src="images/item8.png" class="card-img-top">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Ascend</h5>
+                                        <p class="card-text mb-4">Music Production | Composition</p>
+                                      
+                                        <!--Modal Button-->
+                                        <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal8" data-bs-toggle="modal">View work</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!--Carousel Item 9 | Winding River-->
+                        <div class="carousel-item">
+                            <div class="col-md-3 align-items-stretch">
+                                <div class="card h-100">
+                                    <img src="images/item9.png" class="card-img-top">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Winding River</h5>
+                                        <p class="card-text mb-4">Music Production | Composition</p>
+                                      
+                                        <!--Modal Button-->
+                                        <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal9" data-bs-toggle="modal">View work</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!--Carousel Item 10 | Naitala-->
+                        <div class="carousel-item">
+                            <div class="col-md-3 align-items-stretch">
+                                <div class="card h-100">
+                                    <img src="images/item10.png" class="card-img-top">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Naitala</h5>
+                                        <p class="card-text mb-4">Video Editing | Filmmaking</p>
+                                      
+                                        <!--Modal Button-->
+                                        <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal10" data-bs-toggle="modal">View work</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!--Carousel Item 11 | Coke-->
+                        <div class="carousel-item">
+                            <div class="col-md-3 align-items-stretch">
+                                <div class="card h-100">
+                                    <img src="images/item11.png" class="card-img-top">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Coke</h5>
+                                        <p class="card-text mb-4">Video Editing</p>
+                                      
+                                        <!--Modal Button-->
+                                        <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal11" data-bs-toggle="modal">View work</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!--Carousel Item 12 | MV-->
+                        <div class="carousel-item">
+                            <div class="col-md-3 align-items-stretch">
+                                <div class="card h-100">
+                                    <img src="images/item12.png" class="card-img-top">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">hi ma'am</h5>
+                                        <p class="card-text mb-4">Video Editing</p>
+                                      
+                                        <!--Modal Button-->
+                                        <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal12" data-bs-toggle="modal">View work</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    
+    
+                    <!--Carousel Controls - Prev and Next-->
+                    <a class="carousel-control-prev w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                
+
+            </div>
+        </div>
+
+        <!--Grid View-->
+        <div class="container" id="grid-view">
+            <!--Set 1-->
+            <div class="row">
+                <!--Item 1: Rainbow Race-->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-4">
+                    <div class="card h-100">
+                        <img src="images/item1.png" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Rainbow Race</h5>
+                            <p class="card-text">Digital Art | Music Production</p>
+                            <!--Modal Button-->
+                            <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal1" data-bs-toggle="modal">View work</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Item 2: daydream-->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-4">
+                    <div class="card h-100">
+                        <img src="images/item2.jpg" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">daydream</h5>
+                            <p class="card-text">Image Manipulation</p>
+                            <!--Modal Button-->
+                            <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal2" data-bs-toggle="modal">View work</button>
+                        </div>
+                    </div>
+                </div>
+                    
+                <!--Item 3: Friends-->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-4">
+                    <div class="card h-100">
+                        <img src="images/item3.jpg" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Friends</h5>
+                            <p class="card-text">Digital Art</p>
+                            <!--Modal Button-->
+                            <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal3" data-bs-toggle="modal">View work</button>
+                        </div>
+                    </div>
+                </div>
+                   
+                <!--Item 4: wakeywakey-->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-4">
+                    <div class="card h-100">
+                        <img src="images/item4.png" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">wakeywakey</h5>
+                            <p class="card-text">Digital Art | Music Production</p>
+                            <!--Modal Button-->
+                            <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal4" data-bs-toggle="modal">View work</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Set 2-->
+            <div class="row">
+                <!--Item 5: BINI-->
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="images/item5.png" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Cherry On Top (Remix)</h5>
+                            <p class="card-text">Music Production</p>
+                            <!--Modal Button-->
+                            <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal5" data-bs-toggle="modal">View work</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Item 6: hunny-->
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="images/item6.png" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">hunny</h5>
+                            <p class="card-text">Music Production | Beatmaking</p>
+                            <!--Modal Button-->
+                            <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal6" data-bs-toggle="modal">View work</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Item 7: by my side-->
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="images/item7.png" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">by my side</h5>
+                            <p class="card-text">Digital Art | Music Production</p>
+                            <!--Modal Button-->
+                            <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal7" data-bs-toggle="modal">View work</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Item 8: Ascend-->
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="images/item8.png" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Ascend</h5>
+                            <p class="card-text">Music Production | Composition</p>
+                            <!--Modal Button-->
+                            <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal8" data-bs-toggle="modal">View work</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Set 3-->
+            <div class="row">
+                <!--Item 9: Winding River-->
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="images/item9.png" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Winding River</h5>
+                            <p class="card-text">Music Production | Composition</p>
+                            <!--Modal Button-->
+                            <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal9" data-bs-toggle="modal">View work</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Item 10: Naitala-->
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="images/item10.png" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Naitala</h5>
+                            <p class="card-text">Video Editing | Filmmaking</p>
+                            <!--Modal Button-->
+                            <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal10" data-bs-toggle="modal">View work</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Item 11: Coke-->
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="images/item11.png" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Coke</h5>
+                            <p class="card-text">Video Editing</p>
+                            <!--Modal Button-->
+                            <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal11" data-bs-toggle="modal">View work</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Item 12: MV-->
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="images/item12.png" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">hi ma'am</h5>
+                            <p class="card-text">Video Editing</p>
+                            <!--Modal Button-->
+                            <button class="btn btn-outline-dark mt-auto" data-bs-target="#modal12" data-bs-toggle="modal">View work</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center" id="cartogrid" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400" data-aos-easing="ease-out">
+            <a id="toggle-view" href="#portfolio">View all ↓</a>
+        </div>
+        
+    
+        <!--Modals for each item (outside the carousel)-->
+    
+        <!--Item 1 Modal | RAINBOW RACE-->
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Make the dialog scrollable -->
+                <div class="modal-content">
+                    <!--Modal Header-->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal1Label">1 | RAINBOW RACE</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!--Modal Body-->
+                    <div class="modal-body">                   
+                        <img src="images/item1.png" class="img-fluid mb-4" style="max-width: 100%; height: auto;">
+                        <!--Embedded Content-->
+                        <iframe id="modal1-vid" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/rainbow-race/1758430330?i=1758430331"></iframe>
+                        <p class="lead">I made this track specifically for rhythm games, it became successful that it is getting recognition from the rhythm games community. The artwork is made by me. This is the album cover for my track "RAINBOW RACE".</p>
+                    </div>
+                    <!--Modal Footer-->
+                    <div class="modal-footer d-flex justify-content-between">
+                        <!--Previous Button-->
+                        <button type="button" class="btn" data-bs-target="#modal12" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                                <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                              </svg>
+                        </button>
+                        <!--Next Button-->
+                        <button type="button" class="btn ms-auto" data-bs-target="#modal2" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Item 2 Modal | daydream-->
+        <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Make the dialog scrollable -->
+                <div class="modal-content">
+                    <!--Modal Header-->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal2Label">2 | daydream</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!--Modal Body-->
+                    <div class="modal-body">
+                        <img src="images/item2content.jpg" class="img-fluid mb-4 d-block me-auto ms-auto" style="max-width: 70%; height: auto;">
+                        <p class="text-center">Initial version of the artwork</p>
+                        <p class="lead">One of the hardest tracks I've worked on so far, the artwork only took a day to make. Through image manipulation, I was able to craft this artwork by joining different images and retouch needed areas. This is the album cover for my track "daydream".</p>
+                    </div>
+                    <!--Modal Footer-->
+                    <div class="modal-footer">
+                        <!--Previous Button-->
+                        <button type="button" class="btn" data-bs-target="#modal1" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                                <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                              </svg>
+                        </button>
+                        <!--Next Button-->
+                        <button type="button" class="btn ms-auto" data-bs-target="#modal3" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Item 3 Modal | Friends-->
+        <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Make the dialog scrollable -->
+                <div class="modal-content">
+                    <!--Modal Header-->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal3Label">3 | Friends</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!--Modal Body-->
+                    <div class="modal-body">
+                        <img src="images/item3.jpg" class="img-fluid mb-4" style="max-width: 100%; height: auto;">                   
+                        <p class="lead">I started drawing the characters in my small notebook, it only took a few hours. I loaded up my drawing software, and redraw them in the digital canvas. This is the album cover for my track "Friends".</p>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <!--Previous Button-->
+                        <button type="button" class="btn" data-bs-target="#modal2" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                                <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                              </svg>
+                        </button>
+                        <!--Next Button-->
+                        <button type="button" class="btn ms-auto" data-bs-target="#modal4" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Item 4 Modal | wakeywakey-->
+        <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Make the dialog scrollable -->
+                <div class="modal-content">
+                    <!--Modal Header-->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal4Label">4 | wakeywakey</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!--Modal Body-->
+                    <div class="modal-body">
+                        <img src="images/item4.png" class="img-fluid mb-1 border border-info d-block me-auto ms-auto" style="max-width: 100%; height: auto;">
+                        <!--Embedded Content-->
+                        <iframe id="modal4-vid" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/wakeywakey/1766812925?i=1766812926"></iframe>
+                        <p class="lead">My approach to digital arts is a minimalist art style. This is an example of my clean sketch of a chibi character. This is the album cover for my track "wakeywakey".</p>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <!--Previous Button-->
+                        <button type="button" class="btn" data-bs-target="#modal3" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                                <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                              </svg>
+                        </button>
+                        <!--Next Button-->
+                        <button type="button" class="btn ms-auto" data-bs-target="#modal5" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Item 5 Modal | BINI-->
+        <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Make the dialog scrollable -->
+                <div class="modal-content">
+                    <!--Modal Header-->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal5Label">5 | BINI - Cherry on Top (Remix)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!--Modal Body-->
+                    <div class="modal-body">
+                        <!--Embedded Content-->
+                        <div class="ratio ratio-16x9">
+                            <iframe id="modal5-vid" width="560" height="315" src="https://www.youtube.com/embed/GnZCDxGGRF4?si=mmp75O5MYsMBbWl0&amp;start=25" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <p class="lead">I made a remix of BINI's record-breaking hit "Cherry on Top", visuals made by me.</p>
+                        <p class="lead">Because the remix is unofficial and copyrighted, the video above may be unavailable to play embedded. Therefore, I suggest to play it on my channel if ever.</p>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <!--Previous Button-->
+                        <button type="button" class="btn" data-bs-target="#modal4" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                                <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                              </svg>
+                        </button>
+                        <!--Next Button-->
+                        <button type="button" class="btn ms-auto" data-bs-target="#modal6" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    
+        <!--Item 6 Modal | hunny-->
+        <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Make the dialog scrollable -->
+                <div class="modal-content">
+                    <!--Modal Header-->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal6Label">6 | hunny: my first LoFi beat</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!--Modal Body-->
+                    <div class="modal-body">
+                        <!--Embedded Content-->
+                        <iframe id="modal6-vid" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/hunny/1715274484?i=1715274489"></iframe>
+                        <p class="lead">I attempted to make a LoFi beat in which I called "hunny", cause I think it sounds very sweet.</p>
+                    </div>
+                    <!--Modal Footer-->
+                    <div class="modal-footer">
+                        <!--Previous Button-->
+                        <button type="button" class="btn" data-bs-target="#modal5" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                                <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                              </svg>
+                        </button>
+                        <!--Next Button-->
+                        <button type="button" class="btn ms-auto" data-bs-target="#modal7" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Item 7 Modal | by my side-->
+        <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal7Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Make the dialog scrollable -->
+                <div class="modal-content">
+                    <!--Modal Header-->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal7Label">7 | by my side (feat. eileen)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!--Modal Body-->
+                    <div class="modal-body">
+                        <!--Embedded Content-->
+                        <div class="ratio ratio-16x9">
+                            <iframe id="modal7-vid" width="560" height="315" src="https://www.youtube.com/embed/X1GSrkC1g6E?si=A71ciydVpnkhCCio&amp;start=93" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <p class="lead">This song was in the works for 2 years, it is one of my most successful collaborations, reaching numbers on different platforms. Shout out to the following artists that became a part of this project.</p>
+                        <ul>
+                            <li class="lead">Eileen (singer/lyricist)</li>
+                            <li class="lead">LUX (music video)</li>
+                            <li class="lead">Noshiyu Illust (artwork for MV)</li>
+                        </ul>
+                    </div>
+                    <!--Modal Footer-->
+                    <div class="modal-footer">
+                        <!--Previous Button-->
+                        <button type="button" class="btn" data-bs-target="#modal6" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                                <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                              </svg>
+                        </button>
+                        <!--Next Button-->
+                        <button type="button" class="btn ms-auto" data-bs-target="#modal8" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Item 8 Modal | Ascend-->
+        <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modal8Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Make the dialog scrollable -->
+                <div class="modal-content">
+                    <!--Modal Header-->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal8Label">8 | Ascend: My Orchestral Piece</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!--Modal Body-->
+                    <div class="modal-body">
+                        <!--Embedded Content-->
+                        <div class="ratio ratio-16x9">
+                            <iframe id="modal8-vid" width="560" height="315" src="https://www.youtube.com/embed/M3BvDFIAOdg?si=JrxWpWApqTd2wU2e&amp;start=33" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <p class="lead">Out of inspiration, I composed this orchestral piece to express what I imagine as my fantasy realm. Not the best mixing, but it is definitely listenable.</p>
+                    </div>
+                    <!--Modal Footer-->
+                    <div class="modal-footer">
+                        <!--Previous Button-->
+                        <button type="button" class="btn" data-bs-target="#modal7" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                                <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                              </svg>
+                        </button>
+                        <!--Next Button-->
+                        <button type="button" class="btn ms-auto" data-bs-target="#modal9" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Item 9 Modal | Winding River-->
+        <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="modal9Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Make the dialog scrollable -->
+                <div class="modal-content">
+                    <!--Modal Header-->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal9Label">9 | Winding River (Remix)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!--Modal Body-->
+                    <div class="modal-body">
+                        <!--Embedded Content-->
+                        <div class="ratio ratio-16x9">
+                            <iframe id="modal9-vid" width="560" height="315" src="https://www.youtube.com/embed/6bxTL0F2r70?si=bdPZ4nKc7O75y8Jd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <p class="lead">I remixed an existing piece from a Genshin Impact OST called "Winding River" for YoMusic Music Composition Contest, an official content held by miHoYo, the developer of Genshin Impact.</p>
+                        <p class="lead">This remix did not win.</p>
+                    </div>
+                    <!--Modal Footer-->
+                    <div class="modal-footer">
+                        <!--Previous Button-->
+                        <button type="button" class="btn" data-bs-target="#modal8" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                                <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                              </svg>
+                        </button>
+                        <!--Next Button-->
+                        <button type="button" class="btn ms-auto" data-bs-target="#modal10" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Item 10 Modal | Naitala-->
+        <div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="modal10Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Make the dialog scrollable -->
+                <div class="modal-content">
+                    <!--Modal Header-->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal11Label">10 | Naitala: Short Film</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!--Modal Body-->
+                    <div class="modal-body">
+                        <!--Embedded Content-->
+                        <div class="ratio ratio-16x9">
+                            <iframe id="modal10-vid" src="https://drive.google.com/file/d/1n0CzL0HsprBucfarH3V58BG9AJCRUFgO/preview" width="640" height="480" allow="autoplay"></iframe>
+                        </div>
+                        <p class="lead">This is a short film project I edited alone last year, while also handling the videography, and acting.</p>
+                    </div>
+                    <!--Modal Footer-->
+                    <div class="modal-footer">
+                        <!--Previous Button-->
+                        <button type="button" class="btn" data-bs-target="#modal9" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                                <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                              </svg>
+                        </button>
+                        <!--Next Button-->
+                        <button type="button" class="btn ms-auto" data-bs-target="#modal11" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Item 11 Modal | Coke-->
+        <div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="modal11Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Make the dialog scrollable -->
+                <div class="modal-content">
+                    <!--Modal Header-->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal11Label">11 | Coke: Commercial</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!--Modal Body-->
+                    <div class="modal-body">
+                        <!--Embedded Content-->
+                        <div class="ratio ratio-16x9">
+                            <iframe id="modal11-vid" src="https://drive.google.com/file/d/12rWHHLMSSHvB2FTMDLd-i6RBwwauxTGz/preview" width="640" height="480" allow="autoplay"></iframe>
+                        </div>
+                        <p class="lead">This is a short commercial project I edited last year, plus I took part in acting, videography, and voiceover.</p>
+                    </div>
+                    <!--Modal Footer-->
+                    <div class="modal-footer">
+                        <!--Previous Button-->
+                        <button type="button" class="btn" data-bs-target="#modal10" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                                <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                              </svg>
+                        </button>
+                        <!--Next Button-->
+                        <button type="button" class="btn ms-auto" data-bs-target="#modal12" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Item 12 Modal | MV-->
+        <div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="modal12Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable"> <!-- Make the dialog scrollable -->
+                <div class="modal-content">
+                    <!--Modal Header-->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal12Label">12 | hi ma'am</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!--Modal Body-->
+                    <div class="modal-body">
+                        <!--Embedded Content-->
+                        <div class="ratio ratio-16x9">
+                            <iframe id="modal12-vid" src="https://drive.google.com/file/d/1S8gXJlMM_FG-y3mgaUmkgkxOKtmPUJzs/preview" width="640" height="480" allow="autoplay"></iframe>
+                        </div>
+                        <p class="lead">This is a music video project I edited last year, I also took part in videography.</p>
+                    </div>
+                    <!--Modal Footer-->
+                    <div class="modal-footer">
+                        <!--Previous Button-->
+                        <button type="button" class="btn" data-bs-target="#modal11" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                                <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                              </svg>
+                        </button>
+                        <!--Next Button-->
+                        <button type="button" class="btn ms-auto" data-bs-target="#modal1" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Works through Carousel Cards-->
+    </section>
+    <!--Portfolio-->
+
+    <br>
+    <br>
+    <hr class="mx-3">
+
+    <!-- Blogs Section -->
+    <section id="blogs">
+        <div class="container my-5">
+            <div class="d-flex align-items-center justify-content-end">
+                <!-- Title -->
+                <h1 class="display-4 fw-semibold text-info-emphasis mb-3 me-3" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="100">Blogs</h1>
+
+                <!-- Vertical Line -->
+                <div class="vertical-line" data-aos="flip-up" data-aos-duration="900" data-aos-easing="ease-in-sine" data-aos-delay="1000"></div>
+            </div>
+        </div>      
+
+        <div class="container">
+            <div class="row g-4">
+                <!--Left-->
+                <!--Blog 1-->
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <a href="blog posts/blog1.html" class="card-link">
+                        <div class="card mb-3 blog-card" data-aos="zoom-in" data-aos-easing="ease-in-out-back" data-aos-duration="800">
+                            <div class="row g-0">
+                                <div class="col-lg-12 col-md-4 img-container">
+                                    <img src="images/blog1.PNG" class="card-img-top img-zoom blog-card-img" alt="Card image" style="object-fit: cover; height: 250px;">
+                                </div>
+                                <div class="col-lg-12 col-md-8">
+                                    <div class="card-body blog-card-body">
+                                        <span class="badge rounded-pill text-bg-success mb-2">Music</span>
+                                        <h5 class="card-title">How I Make Music from Start to Finish</h5>
+                                        <p class="card-text">I take a diverse way when I make my tracks, it can take from days to weeks, or even from months to years. But for a solo artist, it may not be that long of a process.</p>
+                                        <p class="card-text view-button"><small class="text-body-secondary">View article</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!--Right-->
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row g-4">
+                        <!--Blog 2-->
+                        <div class="col-12">
+                            <a href="blog posts/blog2.html" class="card-link">
+                                <div class="card mb-3 blog-card" data-aos="zoom-in" data-aos-easing="ease-in-out-back" data-aos-duration="800" data-aos-delay="100">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 img-container">
+                                            <img src="images/blog2.jpg" class="img-fluid rounded-start blog-card-img" style="object-fit: cover; width: 100%; height: 100%;">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body blog-card-body">
+                                                <span class="badge rounded-pill text-bg-warning mb-2">Entertainment</span>
+                                                <h5 class="card-title">I Changed Myself</h5>
+                                                <p class="card-text">Sometimes you just need to look in the mirror and think what have you been doing all day.</p>
+                                                <p class="card-text view-button"><small class="text-body-secondary">View article</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!--Blog 3-->
+                        <div class="col-12">
+                            <a href="blog posts/blog3.html" class="card-link">
+                                <div class="card mb-3 blog-card" data-aos="zoom-in" data-aos-easing="ease-in-out-back" data-aos-duration="800" data-aos-delay="100">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 img-container">
+                                            <img src="images/blog3.jpg" class="img-fluid rounded-start blog-card-img" style="object-fit: cover; width: 100%; height: 100%;">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body blog-card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-md-4 col-12">
+                                                        <span class="badge rounded-pill text-bg-warning mb-2">Entertainment</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12">
+                                                        <span class="badge rounded-pill text-bg-danger mb-2">Food</span>
+                                                    </div>
+                                                </div>
+                                                <h5 class="card-title">How to Make Egg Bread</h5>
+                                                <p class="card-text">This is how I make my most favorite snack, egg bread. Perfect snack for day and night.</p>
+                                                <p class="card-text view-button"><small class="text-body-secondary">View article</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Bottom-->
+            <div class="row g-4">
+                <!--Blog 4-->
+                <div class="col-12">
+                    <a href="blog posts/blog4.html" class="card-link">
+                        <div class="card mb-3 blog-card" data-aos="zoom-in" data-aos-easing="ease-in-out-back" data-aos-duration="800">
+                            <div class="row g-0">
+                                <div class="col-lg-6 col-md-4 img-container">
+                                    <img src="images/blog4.jpg" class="card-img-top img-zoom blog-card-img" alt="New Blog" style="object-fit: cover; height: 250px;">
+                                </div>
+                                <div class="col-lg-6 col-md-8">
+                                    <div class="card-body blog-card-body">
+                                        <span class="badge rounded-pill text-bg-primary mb-2">Education</span>
+                                        <h5 class="card-title">Brought Bronze Home</h5>
+                                        <p class="card-text">For the past years of studying hard at Olivarez College Tagaytay, I finally earned my first achievement, being an awardee.</p>
+                                        <p class="card-text view-button"><small class="text-body-secondary">View article</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <br>
+    <br>
+    <hr class="mx-3">
+    <br>
+    <br>
+
+    <!-- Contact Section -->
+    <section id="contacts" style="overflow-x: hidden;">
+        <div class="container">
+            <div class="container" id="skillset-head" data-aos="zoom-in-up" data-aos-duration="900">
+                <div class="container my-5 text-center" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                    <h1 class="display-4 fw-semibold text-info-emphasis mb-0">Get in touch</h1>
+                    <p class="lead fw-light mb-3">You can contact me through the forms below</p>
+                </div>
+                <hr class="mx-3">
+                <div class="row">
+                    <!--Left-->
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <!--Map Toggler (for phones)-->
+                        <div class="text-center">
+                            <button id="mapToggleBtn" class="btn btn-warning d-md-none mb-4 rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#googleMap" aria-expanded="false" aria-controls="googleMap">
+                                Show Map
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                                </svg>
+                            </button>
+                        </div> 
+    
+                        <!--Embedded Google Maps Location-->
+                        <div class="collapse d-md-block" id="googleMap">
+                            <iframe src="https://maps.google.com/maps?q=14.204597, 121.014318&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+    
+                    <!--Right-->
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="contact-form-container" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="200" data-aos-easing="ease-in-out-back">
+                            <form autocomplete="off">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <!--First Name-->
+                                        <div class="form-group" data-aos="flip-down" data-aos-duration="1800" data-aos-delay="400" data-aos-easing="ease-in-out-back">
+                                            <input type="text" id="fname" class="form-input" placeholder=" " required>
+                                            <label for="fname" class="form-label">First Name</label>
+                                        </div>  
+                                    </div>
+                                    <div class="col-6">
+                                        <!--Last Name-->
+                                        <div class="form-group" data-aos="flip-down" data-aos-duration="1800" data-aos-delay="400" data-aos-easing="ease-in-out-back">
+                                            <input type="text" id="lname" class="form-input" placeholder=" " required>
+                                            <label for="lname" class="form-label">Last Name</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                        
+                                <!--Email-->
+                                <div class="form-group" data-aos="flip-down" data-aos-duration="1800" data-aos-delay="400" data-aos-easing="ease-in-out-back">
+                                    <input type="email" id="email" class="form-input" placeholder=" " required>
+                                    <label for="email" class="form-label">Email Address</label>
+                                </div>
+                        
+                                <!--Message-->
+                                <div class="form-group" data-aos="flip-down" data-aos-duration="1800" data-aos-delay="400" data-aos-easing="ease-in-out-back">
+                                    <textarea id="message" class="form-input" placeholder=" " required></textarea>
+                                    <label for="message" class="form-label">Message</label>
+                                </div>
+                        
+                                <!--Checkbox-->
+                                <div class="form-check" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="400" data-aos-easing="ease-in-out-back">
+                                    <input type="checkbox" id="saveInfo" class="form-check-input">
+                                    <label for="saveInfo" class="form-check-label">Send me a copy of this message</label>
+                                </div>
+                        
+                                <!--Submit Button-->
+                                <button data-mdb-ripple-init type="submit" class="btn btn-dark btn-block mb-4 w-100 text-white" data-aos="zoom-in" data-aos-duration="1800" data-aos-delay="400" data-aos-easing="ease-in-out-back">Send</button>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted" data-aos="fade-up" 
+    data-aos-easing="ease-out-sine" data-aos-duration="500">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="d-lg-block">
+                <h3 class="display-6" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">Stay connected</h3>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <!--SocMed Icons-->
+            <div>
+                <div class="row align-items-center" id="socmed-hero">
+                    <!--Facebook-->
+                    <div class="col-6 col-sm-3 col-md-3 text-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                        <a type="button" class="btn rounded-4" id="icon1" href="https://www.facebook.com/bp.charlesjk" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <!--Facebook-->
+                    
+        
+                    <!--YouTube-->
+                    <div class="col-6 col-sm-3 col-md-3 text-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                        <a type="button" class="btn rounded-4" id="icon2" href="https://www.youtube.com/c/SWANNAH69" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <!--YouTube-->
+        
+                    <!--Instagram-->
+                    <div class="col-6 col-sm-3 col-md-3 text-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">                      
+                        <a type="button" class="btn rounded-4" id="icon3" href="https://www.instagram.com/wanasan16/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <!--Instagram-->
+        
+                    <!--Spotify-->
+                    <div class="col-6 col-sm-3 col-md-3 text-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">                       
+                        <a type="button" class="btn rounded-4" id="icon4" href="https://open.spotify.com/artist/47SYCgJrnsGnlDNcUpfqy1?si=AtB1aNCySh6cd99UNLAS3A" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <!--Spotify-->
+                </div>
+            </div>
+            <!--SocMed Icons-->
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+    
+        <!-- Section: Links  -->
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                        <!--Content-->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-neutral-fill" viewBox="0 0 16 16">
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m-3 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5M10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8"/>
+                            </svg>
+                            Charles M.
+                        </h6>
+                        <p>
+                            Once a loser, always a loser.
+                        </p>
+                        <!--Content-->
+                    </div>
+            
+                    <!--Useful Links-->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                        <!-- Links -->
+                        <div class="useful-links">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="#resume" class="text-reset">Resume</a>
+                            </p>
+                            <p>
+                                <a href="#portfolio" class="text-reset">Portfolio</a>
+                            </p>
+                            <p>
+                                <a href="#blogs" class="text-reset">Blogs</a>
+                            </p>
+                            <p>
+                                <a href="#contacts" class="text-reset">Contact</a>
+                            </p>
+                        </div>
+                        <!-- Links -->
+                    </div>
+                    <!--Useful Links-->
+            
+                    <!--Contact Details-->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                        <h6 class="text-uppercase fw-bold mb-4">Let's Talk</h6>
+                        <!--Home Address-->
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+                            </svg>
+                        Silang, Cavite, 4118, PH
+                        </p>
+                        <!--Home Address-->
+
+                        <!--Email Address-->
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+                            </svg>
+                            iammathewiam@gmail.com
+                        </p>
+                        <!--Email Address-->
+
+                        <!--Contact Number-->
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                            </svg>
+                            + 63 995 857 0660
+                        </p>
+                        <!--Contact Number-->
+                    </div>
+                    <!--Contact Details-->
+                </div>
+            </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 Copyright:
+            <p class="text-reset fw-bold">Charles M.</p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- Back to top button -->
+    <a type="button" class="btn btn-floating" id="btn-back-to-top" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#167699" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+            <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0"/>
+        </svg>
+    </a>
+    <!-- Back to top button -->
+      
+    <!--Imported JavaScripts-->
+    <!--JS File-->
+    <script src="JS/script.js" type="text/javascript"></script>
+
+    <!--Bootstrap 5 JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--jQuery Minified v3.x.x-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!--Imported JavaScripts-->
+</body>
+</html>
