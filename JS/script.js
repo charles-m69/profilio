@@ -21,7 +21,7 @@ function scrollFunction() {
 
 //Typing Animation
 var typed = new Typed(".auto-type",{
-    strings : ["EDM Specialist", "Content Creator", "Frontend Web Developer"], // The text to be displayed
+    strings : ["Open To Work", "Fresh Graduate", "Visual Artist", "Music Producer"], // The text to be displayed
     typeSpeed : 100,
     backSpeed : 50,
     loop: true
